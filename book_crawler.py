@@ -1,7 +1,7 @@
 import requests, os,bs4,re
 
 bookFile = open('nitian.txt','w',encoding='utf-8') # 打开txt文件
-url = 'https://www.nitianxieshen.com/wangushendi/' # 目录页
+url = 'https://www.nitianxieshen.com/zhuixu/' # 目录页
 link_list = requests.get(url)
 link_list.encoding='utf-8'
 soup = bs4.BeautifulSoup(link_list.text,features='html.parser')
